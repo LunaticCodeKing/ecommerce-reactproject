@@ -8,11 +8,13 @@
     z-index: 100;
 }
 
-.header_logo{
+.header__logo{
     width: 100px;
     object-fit: contain;
-    margin: 0 20px;
+    margin: 0 0px;
     margin-top: 18px;
+    margin-bottom: 12px;
+    margin-left: 10px;
 }
 
 .header__search{

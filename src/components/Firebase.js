@@ -1,3 +1,5 @@
+import firebase from "firebase";
+
 const firebaseConfig = {
     apiKey: "AIzaSyAtLkOU6wqF717Qy2I_BaQ0DPc1JKSIQck",
     authDomain: "ecommerce-reactproject.firebaseapp.com",
@@ -9,5 +11,10 @@ const firebaseConfig = {
     measurementId: "G-5X29ZV25FD"
   };
 
+  const firebaseApp = firebase.initializeApp(firebaseConfig);
+  const db = firebaseApp.firestore();
+  const auth = firebase.auth();
+
+  export {db,auth};
 
   

@@ -1,10 +1,11 @@
 import React from 'react';
-import "../styling/Product.css"
+import { Link } from "react-router-dom";
 import { useStateValue } from './Stateprovider';
+import "../styling/Product.css"
 
 function Product({ id,title,image,price,rating }) {
 
-    const [{ basket },dispatch] = useStateValue();
+    const [{ basket,user },dispatch] = useStateValue();
 
     const addToBasket = () => {
         // dispatch the item into the data layer
@@ -21,6 +22,7 @@ function Product({ id,title,image,price,rating }) {
     };
 
     return (
+        
         <div className="product">
             <div className="product__info">
                 <p>{title}</p>
