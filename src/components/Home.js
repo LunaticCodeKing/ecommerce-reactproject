@@ -1,14 +1,18 @@
-import React from 'react';
-import Product from "./Product";
+import React from "react";
 import "../styling/Home.css";
+import Product from "./Product";
 
 function Home() {
-    return (
-        <div className = "home">
-           <div className = "home__container">
-               <img className="home__image" src="" alt="" />
-           
-               <div className = "home__row">
+  return (
+    <div className="home">
+      <div className="home__container">
+        <img
+          className="home__image"
+          src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
+          alt=""
+        />
+
+          <div className = "home__row">
                    <Product 
                         id = "12345678"
                         title="Iphone 12 Pro Max | 6.7 inch |
@@ -48,7 +52,7 @@ function Home() {
                         image='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTYac6Xm5nG4Qm_B-HUnpfgBjZlJNK2v0bg4Q&usqp=CAU'
                         rating={4} 
                     />
-               </div> 
+                </div> 
 
                <div className = "home__row">
                    <Product
@@ -59,9 +63,9 @@ function Home() {
                      rating={5}
                    />
                </div>  
-           </div>
         </div>
-    )
+    </div>
+  );
 }
 
-export default Home
+export default Home;

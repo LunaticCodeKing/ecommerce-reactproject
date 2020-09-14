@@ -1,20 +1,19 @@
 import firebase from "firebase";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAtLkOU6wqF717Qy2I_BaQ0DPc1JKSIQck",
-    authDomain: "ecommerce-reactproject.firebaseapp.com",
-    databaseURL: "https://ecommerce-reactproject.firebaseio.com",
-    projectId: "ecommerce-reactproject",
-    storageBucket: "ecommerce-reactproject.appspot.com",
-    messagingSenderId: "612157425488",
-    appId: "1:612157425488:web:ee2e80c1bb7d88b8a84e55",
-    measurementId: "G-5X29ZV25FD"
-  };
+  apiKey: "AIzaSyABoQn4GIGuikqoVT9T7yZBF9PrYq1Z3GY",
+  authDomain: "ecommerce-reactproject-aff8d.firebaseapp.com",
+  databaseURL: "https://ecommerce-reactproject-aff8d.firebaseio.com",
+  projectId: "ecommerce-reactproject-aff8d",
+  storageBucket: "ecommerce-reactproject-aff8d.appspot.com",
+  messagingSenderId: "828481944022",
+  appId: "1:828481944022:web:ffbb15b8f2259d53510c77",
+  measurementId: "G-LZX9677G54"
+};
 
-  const firebaseApp = firebase.initializeApp(firebaseConfig);
-  const db = firebaseApp.firestore();
-  const auth = firebase.auth();
+const firebaseApp = firebase.initializeApp(firebaseConfig);
 
-  export {db,auth};
+const db = firebaseApp.firestore();
+const auth = firebase.auth();
 
-  
+export { db, auth };
